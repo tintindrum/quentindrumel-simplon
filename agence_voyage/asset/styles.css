@@ -1,0 +1,96 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(62, 100, 136);
+}
+
+.contacteznous{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 15px rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.section_contact{
+    min-height: 500px;
+    height: 65vh;
+    width: 100vw;
+    color: blanchedalmond;
+    background-color: black;
+    background-image: url(./img/sky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    overflow: auto;
+}
+
+.box_contact{
+    width: 35%;
+    min-width: 500px;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 1.5vw;
+    margin: auto;
+    box-shadow: -5px 7px 50px rgb(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.box_contact_textfield{
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 2%;
+    height: 10%;
+    top: 0%;
+    border-radius: 0.5vw;
+    border-color: white;
+    background-color: white;
+    outline: none;
+    lighting-color: white;
+    border-inline-end-color: white;
+    border: none;
+    resize: none;
+    color: gray;
+    box-shadow: -5px 7px 50px rgb(0, 0, 0, 0.3);
+}
+
+.alertmessage{
+    color: rgb(214, 31, 31);
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 0%;
+    position: absolute;
+    top: 75%;
+}
+
+.box_contact_textfield_message{
+   height: 30%;
+}
+
+.btn_valider_contact{
+    height: 8%;
+    width: 20%;
+    background-color: rgb(130, 161, 248);
+    border-radius: 10px;
+    margin-top: 7%;
+    margin-left: 40%;
+    vertical-align: middle;
+    border-color: rgba(255, 255, 255, 0);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+    color: white;
+}
+
+.copyright{
+    color: white;
+    margin: 0 auto;
+    width: 100vw;
+    text-align: center;
+    height: 5vh;
+    font-size: 80%;
+}
