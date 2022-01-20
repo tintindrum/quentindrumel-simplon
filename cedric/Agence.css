@@ -1,0 +1,54 @@
+h1 { 
+    text-align: center;
+    color: #000000;
+}
+
+h2
+{
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+
+   
+
+}
+h3
+{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    color:#000205
+}
+.columns1
+{
+    display: flex;
+    padding: 20px;
+}
+
+.columns2
+{
+    display: flex;
+    padding: 40px;
+}
+
+
+.columns1 p
+{
+justify-content: center;
+font-size: 15px;
+margin-top: 2px;
+margin-left: 15px;
+
+}
+
+.columns2 p
+{
+
+font-size: 15px;
+margin-bottom: 20px;
+margin-left: 120px;
+justify-content: center;
+}
