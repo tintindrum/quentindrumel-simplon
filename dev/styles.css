@@ -303,9 +303,169 @@ section{
 
 /* section 5 Avis  */
 
-/* section 6 formulaire de contact  */
+.temoignage{
+    background-image: url(img/agence.jpg);
+    background-size: cover;
+    margin: -50px;
+}
 
-/* footer  */
+.temoignage .contenu{
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+
+
+.temoignage .contenu .box{
+    width: 340px;
+    margin: 20px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 40px;
+}
+
+.temoignage .contenu .box .imbox{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.temoignage .contenu .box .imbox img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.temoignage .contenu .box .text{
+    text-align: center;
+    color: #666;
+    font-style: italic;
+}
+
+.temoignage .contenu .box .text h3{
+    color: #fb911f;
+    margin-top: 20px;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+/* section 6 formulaire de contact + footer  */
+
+
+
+
+.contacteznous{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 15px rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: default;
+    padding: 10px 10px;
+}
+
+.section_contact{
+    min-height: 500px;
+    height: 75vh;
+    width: 100vw;
+    color: blanchedalmond;
+    background-color: black;
+    background-image: url('img/sky.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    overflow: auto;
+    margin-top: 100px;
+
+
+}
+
+.box_contact{
+    width: 35%;
+    min-width: 500px;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 1.5vw;
+    margin: auto;
+    box-shadow: -5px 7px 50px rgb(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.box_contact_textfield{
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 2%;
+    height: 10%;
+    top: 0%;
+    border-radius: 0.5vw;
+    border-color: white;
+    background-color: white;
+    outline: none;
+    lighting-color: white;
+    border-inline-end-color: white;
+    border: none;
+    resize: none;
+    color: gray;
+    box-shadow: -5px 7px 50px rgb(0, 0, 0, 0.3);
+}
+
+.alertmessage{
+    color: rgb(214, 31, 31);
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 15px;
+    margin-top: -2%;
+    position: absolute;
+    top: 75%;
+}
+
+.box_contact_textfield_message{
+   height: 30%;
+}
+
+.btn_valider_contact{
+    height: 8%;
+    width: 20%;
+    background-color: rgb(130, 161, 248);
+    border-radius: 10px;
+    margin-top: 10%;
+    margin-left: 40%;
+    vertical-align: middle;
+    border-color: rgba(255, 255, 255, 0);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+    color: white;
+    cursor: pointer;
+}
+
+.copyright{
+    color: rgb(0, 0, 0);
+    margin: 0 auto;
+    width: 100vw;
+    text-align: center;
+    height: 5vh;
+    font-size: 80%;
+    margin-top: 15px;
+
+}
+
 
 
 header.sticky{

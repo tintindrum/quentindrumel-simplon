@@ -108,6 +108,7 @@
             </div>
         </div>
 
+         
         <!-- section nos agences Cédric -->
 
         <section class="expert" id="expert">
@@ -151,10 +152,70 @@
             </div>
        </section>
 
+    </section>
+       <!-- section avis clients Cedric -->
 
-            
-        <!-- section contactez-moi + footer Julien  -->
+       <section class="temoignage" id="temoignage">
+            <div class="titre blanc">
+                <h2 class="titre-texte">Les Avis <span>U</span>tilisateurs</h2>
+            </div>
+            <div class="contenu">
+                <div class="box">
+                    <div class="imbox">
+                    <img src="img/01.png" alt="">
+                </div>
+                <div class="text">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt suscipit harum provident corporis accusantium dignissimos animi magnam quae eum architecto nobis amet molestiae et nesciunt consectetur, autem laborum non quia!</p>
+                    <h3>Monsieur x</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="img/01.png" alt="">
+                </div>
+                <div class="text">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt suscipit harum provident corporis accusantium dignissimos animi magnam quae eum architecto nobis amet molestiae et nesciunt consectetur, autem laborum non quia!</p>
+                    <h3>Monsieur x</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="img/01.png" alt="">
+                </div>
+                <div class="text">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt suscipit harum provident corporis accusantium dignissimos animi magnam quae eum architecto nobis amet molestiae et nesciunt consectetur, autem laborum non quia!</p>
+                    <h3>Monsieur x</h3>
+                </div>
+            </div>
+         </div>
+       </section>
+      
+
+
+     <!-- section contactez-moi Julien  -->
+     <section class="section_contact" id="contact">
+        <div class="box_contact" id="contact_box">
+            <h2 class="contacteznous">C O N T A C T E Z - N O U S</h2>
+            <input type="text" placeholder="Nom" class="box_contact_textfield" id="name"></input>
+            <input type="text" placeholder="Email" class="box_contact_textfield" id="email"></input>
+            <textarea class="box_contact_textfield box_contact_textfield_message" placeholder="Message" id="message"></textarea>
+            <input class="btn_valider_contact" value="ENVOYER" type="button" onclick="test()" id="button"/>
+            <h2 class="alertmessage" id="alertmessageid"></h2>
+            </div>
+    </section>
     
+    
+    <!-- footer  -->
+    
+    <section>
+    <h2 class="copyright"><a href="#">Groupe Projet Simplon</a> 2022 | Copyright | Guide de voyage, Tous droits réservés </h2>
+    </section>
+
+
+
+
+
+
     <!-- script JS barre de navigation  -->
     <script type="text/javascript">
             window.addEventListener('scroll', function(){
@@ -169,5 +230,7 @@
                 menuToggle.classList.toggle('active');
             }
     </script>
+    <script src="contact.js">
+    </script>  
 </body>
 </html>
