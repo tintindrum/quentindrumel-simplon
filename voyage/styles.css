@@ -147,7 +147,7 @@ section{
 }
 
 .row .col50 p {
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 
 .titre-texte{
@@ -163,13 +163,33 @@ section{
 }
 
 .row .col50 img{
-    height: 450px;
-    width: 600px;
+    height: 400px;
+    width: 400px;
     position: relative;
+    border-radius: 2vw;
+    box-shadow: 20px 15px 35px rgba(0,0,0, 0.4);
 
 }
 
 /* Section 3 Les destinations  */
+
+.btn2{
+    font-size: 1em;
+    color: #fff;
+    background: #105ccea6;
+    padding: 10px 30px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-bottom: 30px;
+}
+
+.btn2:hover{
+    letter-spacing: 4px;
+}
+
 .titre{
     display: flex;
     width: 100%;
@@ -179,14 +199,14 @@ section{
 }
 
 .menu{
-    margin-top: -100px;
+    margin-top: -50px;
 }
 
 .menu .contenu{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 40px;
+    margin-top: 80px;
 }
 
 .menu .contenu .box{
@@ -217,12 +237,12 @@ section{
     text-align: center;
     font-weight: 300px;
     color: #111;
+    margin-top: 100px;
 }
 
 .menu .contenu .box .text h3{
     font-weight: 400;
-    margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
     cursor: default;
 }
 
@@ -231,9 +251,55 @@ section{
     margin-top: 5px;
     margin-bottom: 10px;
     cursor: pointer ;
+    font-size: 40px;
 }
 
 /* section 4 Agences */
+
+.expert{
+    margin-top: 200px;
+}
+
+    
+.expert p {
+    font-size: 2.2em;
+    text-align: center;
+    justify-content: center;
+    font-style: oblique;
+
+}
+
+.expert .contenu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.expert .contenu .box{
+    width: 300px;
+    margin: 50px;
+    padding: 50px 20px;
+    background-color: #ffe2be;
+    
+}
+.expert .contenu .box img{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    margin-top: -40px;
+}
+
+.expert .contenu .box h3{
+    color: #111;
+    font-weight: 200;
+    text-align: center;
+}
+
+
 
 /* section 5 Avis  */
 
@@ -263,7 +329,7 @@ header.sticky li a:hover{
 
 
 /* Format de la page telephone + tablette + deskop */
-@media (max-width: 1400px) {
+@media (max-width: 1340px) {
 header, 
 header.sticky{
     padding: 10px 20px;
@@ -299,10 +365,15 @@ header .navbar.active{
     flex-direction: column;
     background: #ffff;
     align-items: center;
+    padding: 5px;
 }
 
 header .logo {
     margin-left: -50px;
+}
+
+header .navbar.active .btn-reserve {
+    margin-top: 5px;
 }
 
 .menuToggle{
@@ -383,8 +454,84 @@ text-align: center;
     }
 }
 
-@media (max-width: 400px)
+@media (max-width: 500px)
 {
+
+    header, 
+header.sticky{
+    padding: 10px 20px;
+}
+
+body {
+    font-size: 0.8em;
+}
+header .navbar li{
+    margin-left: 0px;
+}
+
+header .navbar li a {
+    text-decoration: none;
+    color: #111;
+    font-size: 0.9em;
+    font-weight: 300;
+}
+
+.navbar{
+    display: none;
+}
+section{
+    padding: 20px;
+}
+
+header .navbar.active{
+    width: 100%;
+    height: calc(100% -68px);
+    position: fixed;
+    top: 68px;
+    left:0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #ffff;
+    align-items: center;
+    margin-left: -10px;
+    font-size: 1em;
+    padding: 5px;
+}
+
+header .navbar.active .btn-reserve {
+    margin-top: 5px;
+}
+
+
+header .logo {
+    margin-left: 10px;
+}
+
+.menuToggle{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-image: url(img/menu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    background-size: 30px;
+    margin-right: -90px;
+}
+
+.menuToggle.active
+{
+    background-image: url(img/close.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-origin: center;
+}
+
+header.sticky .menuToggle{
+    filter: invert(1);
+}
+    /* modifie */
     .banniere .contenu h2{
         font-size: 1.5em;
         color: #fff;
@@ -393,19 +540,29 @@ text-align: center;
 
     .titre-text{
         color: #000;
-        font-size: 2rem;
+        font-size: 1.2rem;
         font-weight: 300;
         text-transform: capitalize;
     }
 
+    .row .col50 img{
+        height: 250px;
+        width: 250px;
+        position: relative;
+        margin-left: 10px;
 
+    
+    }
+    
+    
+    
+    
     .temoignage h2 
     {
-        font-size: 1.1em;
+        font-size: 0.8em;
     }
 
     .temoignage p{
         text-align: center;
     }
 }
-
