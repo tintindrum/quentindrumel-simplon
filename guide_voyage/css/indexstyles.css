@@ -218,21 +218,26 @@ section{
 /* Section 3 Les destinations  */
 
 .btn2{
+    position: relative;
     font-size: 1em;
     color: #fff;
     background: #105ccea6;
-    padding: 10px 30px;
+    padding: 10px 35px;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: 0.5s;
-    display: inline-block;
-    bottom: 5px;
+    display: flex;
+    bottom: 10px;
+    width: 40%;
+    left: 30%;
+    margin-bottom: 5%;
+
     
 }
 
 .btn2:hover{
-    letter-spacing: 4px;
+    transform: scale(1.05);
 }
 
 .titre{
@@ -283,6 +288,7 @@ section{
     font-weight: 300px;
     color: #111;
     margin-top: 80px;
+    height: 400px;
 }
 
 .menu .contenu .box .text h3{
@@ -367,7 +373,7 @@ section{
 
 
 .temoignage .contenu .box{
-    width: 340px;
+    width: 450px;
     margin: 20px;
     background: #fff;
     box-shadow: 20px 15px 35px rgba(0,0,0, 0.9);
