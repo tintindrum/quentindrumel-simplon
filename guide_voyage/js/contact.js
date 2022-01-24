@@ -34,7 +34,7 @@ function test() {
       if (number_of_lines>1){
       alertmessage.style.top = String(75-1*number_of_lines)+"%"
       messagebox.style.height = String(80+5*number_of_lines)+"%"
-      button.style.marginTop = String(5.5*number_of_lines)+"%"
+      button.style.marginTop = String(6.5*number_of_lines)+"%"
       }
     }
 }

@@ -6,7 +6,7 @@ var img = new Image();
 img.src = './img/voyage-banner2.png';
 var CanvasXSize = 1480;
 var CanvasYSize = 850;
-var speed = 30; // plus elle est basse, plus c'est rapide
+var speed = 25; // plus elle est basse, plus c'est rapide
 var scale = 1.00;
 var y = -4.5; // décalage vertical
 

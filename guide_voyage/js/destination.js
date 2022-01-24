@@ -8,7 +8,7 @@ class obj_destination{
         this.destination_name = destination_name
         this.destination_description = destination_description
         this.destination_photos = destination_photos
-        this.nb_pointsforts = this.nb_pointsforts
+        this.pointsforts = this.pointsforts
     }
 }
 
@@ -16,21 +16,21 @@ destination_france = {
     destination_name: "France",
     destination_description: "La France est un super pays !",
     destination_photos: ["img/france/france1.png","img/france/france2.png","img/france/france3.png","img/france/france4.png"],
-    nb_pointsforts: 1
+    pointsforts: ["bonjour ça va","oui"]
 }
 
 destination_italie = {
     destination_name: "Italie",
     destination_description: "L'Italie, on mange des pâtes",
     destination_photos: ["img/italie/italie1.png", "img/italie/italie2.png", "img/italie/italie3.png", "img/italie/italie4.png"],
-    nb_pointsforts: 3
+    pointsforts: ["bonjour ça va","un peu", "beaucoup", "passionément"]
 }
 
 destination_espagne = {
     destination_name: "Espagne",
     destination_description: "Hablo español ?",
     destination_photos: ["img/espagne/espagne1.png", "img/espagne/espagne2.png", "img/espagne/espagne3.png","img/espagne/espagne4.png"],
-    nb_pointsforts: 5
+    pointsforts: ["hello world","bissmilah", "je rentre chez moi", "bonsoir", "bonsoir"]
 
 }
 
@@ -38,14 +38,14 @@ destination_paysbas = {
     destination_name: "Pays-Bas",
     destination_description: "Les Pays-Bas (en néerlandais : Nederland), en forme longue le royaume des Pays-Bas (Koninkrijk der Nederlanden), sont un pays transcontinental dont le territoire métropolitain est situé en Europe.",
     destination_photos: ["img/paysbas/paysbas1.png", "img/paysbas/paysbas2.png", "img/paysbas/paysbas3.png", "img/paysbas/paysbas4.png"],
-    nb_pointsforts: 3
+    pointsforts: ["mhhhhhhh","ah"]
 }
 
 destination_allemagne = {
     destination_name: "Allemagne",
     destination_description: "L'Allemagne (/almaɲ/ ; en allemand : Deutschland",
     destination_photos: ["img/allemagne/allemagne1.png", "img/allemagne/allemagne2.png", "img/allemagne/allemagne3.png", "img/allemagne/allemagne4.png"],
-    nb_pointsforts: 4
+    pointsforts: ["mhhhhhhh","ah"]
 }
 
 const destination_list = [destination_france, destination_italie, destination_espagne, destination_paysbas, destination_allemagne]
@@ -119,7 +119,7 @@ function set_destination_texts_and_images(){
     var infos_container = document.createElement("div");
     infos_container.className = "cardre_plusdinfo_part2_contenaire_infos"
 
-    for (let i = 0; i < destination.nb_pointsforts; i++) {
+    for (let i = 0; i < destination.pointsforts.length; i++) {
 
         var div_info = document.createElement("div");
         div_info.style.width = "90%";
@@ -132,6 +132,7 @@ function set_destination_texts_and_images(){
 
         var info_text = document.createElement("div");
         info_text.className = "point_fort_text"
+        stringg = destination.pointsforts[i]
         info_text.innerHTML = stringg
 
         div_info.appendChild(info_point);
